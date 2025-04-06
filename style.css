@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  background-color: hsl(30, 54%, 90%);
+}
+main {
+  width: 100%;
+  background-color: hsl(0, 0%, 100%);
+}
+img {
+  width: 100%;
+}
+section {
+  padding: 2rem;
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+h1,
+h2 {
+  font-family: "Young Serif";
+  font-weight: 400;
+  line-height: 1;
+}
+h1 {
+  font-size: 2.2rem;
+}
+h2 {
+  font-size: 1.5rem;
+  color: hsl(14, 45%, 36%);
+}
+h3 {
+  font-size: 1.5rem;
+  font-family: "Outfit";
+  font-weight: 600;
+  line-height: 1;
+}
+p,
+li {
+  font-family: "Outfit";
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+p {
+  padding: 1.5rem 0;
+}
+ul,
+ol {
+  padding-left: 1rem;
+  padding-top: 1.5rem;
+}
+li {
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+}
+li::marker {
+  color: hsl(14, 45%, 36%);
+  font-weight: 600;
+}
+hr {
+  width: 100%;
+  margin: auto;
+  height: 1px;
+  background-color: hsl(30, 54%, 90%);
+}
+#preparation {
+  background-color: hsl(330, 100%, 98%);
+  border-radius: 15px;
+}
+#preparation > h3 {
+  color: hsl(332, 51%, 32%);
+}
+#preparation::marker {
+  color: hsl(332, 51%, 32%);
+}
+.subSection {
+  padding: 2rem;
+  padding-bottom: 0;
+}
+#Ingredients {
+  padding-left: 0;
+}
+.nutrition-table {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.item {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+.item p {
+  flex-basis: 50%;
+  padding: 1rem 2rem;
+}
+.item:last-child {
+  border-bottom: none;
+}
+.item:last-child > p {
+  padding-bottom: 0;
+}
+.value {
+  color: hsl(14, 45%, 36%);
+  font-weight: 700;
+}
+section:last-child {
+  border-bottom: none;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding: 10px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    width: 55%;
+    max-width: 50rem;
+    margin: 12vh auto;
+    border-radius: 20px;
+    padding: 2rem;
+  }
+  img {
+    border-radius: 20px;
+  }
+  section {
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 769px) and (min-width: 1200px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  h1 {
+    font-size: 2.8rem;
+  }
+}
